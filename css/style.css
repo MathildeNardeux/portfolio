@@ -1,9 +1,10 @@
 html {
     max-width: 100vw;
     color: #707070;
+    overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: #707070;
 }
@@ -12,16 +13,31 @@ body {
     margin: 0px;
     font-family: 'Lato';
     font-size: 15px;
-    background-color: white;
     min-height: 100vh;
     max-width: 100vw;
 
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
 h3 {
     font-size: 2rem
 }
 
+.navbar {
+    background-color: #FF8600;
+}
+
+.marginNav {
+    margin-top: 56px;
+}
+
+
+
+/*
 nav {
     position: fixed;
     top: 0;
@@ -45,6 +61,7 @@ nav li:hover {
     text-decoration: none;
     color: white;
 }
+*/
 
 h1 {
     font-size: 2rem;
@@ -64,76 +81,218 @@ ul {
 }
 
 
-/*Load*/
-.loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    z-index: 100;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-}
-
-.loader {
-    width: 120px;
-    height: 120px;
-    border: 16px solid #e5e5e5;
-    border-radius: 50%;
-    border-top: 16px solid #FFBE00;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: loader 1s linear infinite;
-}
-
-@keyframes loader {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg)
-    }
-}
-
-.loader-container.hidden{
-    display: none;
-}
-
 .photoPerso {
     width: 45vh;
     position: relative;
+}
+
+
+
+.ombrePhoto::before {
+    content: "";
+    background-image: url(images/ellipseBeige.png);
+    position: absolute;
+    top: 25%;
+    right: -23%;
+    width: 400px;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.ombrePhoto::after {
+    content: "";
+    background-image: url(images/trace.png);
+    position: absolute;
+    top: 180px;
+    left: 90%;
+    width: 350px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.ombreBis {
+    position: relative;
+}
+
+.ombreBis::after {
+    content: "";
+    background-image: url(images/double.png);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.ombreBis::before {
+    content: "";
+    background-image: url(images/hautDroite.png);
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
     z-index: 1;
+    transform: rotate3d(1, 1, 1, -23deg)
 }
 
 #accueil {
-    background-image: url(images/test%20jaune.png);
+    background-image: url(images/Rectangle%2025.png);
     background-position: cover;
     min-height: 100vh;
-    margin: 0;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100vw;
+    padding-top: 100px;
+
 }
+
+#accueil h1 {
+    font-size: 66px;
+    font-family: "Tw Cen MT";
+    color: #FF8600;
+    font-variant-caps: all-small-caps;
+    margin-bottom: 20px;
+    transition: text-shadow 0.2s;
+}
+
+#accueil h1:hover {
+    text-shadow: 3px 2px #FFBE00;
+
+}
+
+#accueil h2 {
+    font-size: 129px;
+    font-family: "Tw Cen MT";
+    color: black;
+    font-variant-caps: all-small-caps;
+    margin-top: -80px;
+}
+
+
+.mathilde::before {
+    content: "";
+    background-image: url(images/ellipseJaune.png);
+    position: absolute;
+    right: -32%;
+    top: 20px;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 0.2s ease-in 0.2s;
+
+}
+
+.mathilde:hover::before {
+    transform: scale(1.03);
+}
+
+.mathilde::after {
+    content: "";
+    background-image: url(images/trace.png);
+    position: absolute;
+    right: -25%;
+    top: -15px;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    transform: scale(0.7);
+}
+
+.nardeux {
+    margin-bottom: 10px
+}
+
+#accueil h3 {
+    font-size: 45px;
+    font-family: "Tw Cen MT";
+    color: #FFBE00;
+    font-variant-caps: all-small-caps;
+    margin-top: -50px;
+    transition: text-shadow 0.5s;
+
+}
+
+#accueil h3:hover {
+    text-shadow: 2px -1px #FF8600;
+}
+
+
 
 .accueilBloc {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 
 .fa-chevron-down {
-    font-size: 3.4rem
+    font-size: 3.4rem;
+    color: #FF8600;
+    animation-name: scrollAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: text-shadow 0.3s ease-in 0.1s;
+
 }
+
+.fa-chevron-down:hover {
+    text-shadow: 5px 0px #FFBE00;
+}
+
+
+.declencheScroll {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.declencheScroll a {
+    margin: auto;
+}
+
+.declencheScroll p {
+    opacity: 0;
+}
+
+
+.declencheScroll:hover p {
+    animation-name: apparitionDouce;
+    opacity: 1;
+    animation-duration: 0.5s;
+    animation-name: apparitionDouce;
+}
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .elementPres {
     margin-left: 20px;
-    background-color: white;
     padding: 10px 30px 10px 50px;
-    margin-left: -30px
+    margin-left: -30px;
+    margin-right: 180px;
 }
 
 main {
@@ -144,62 +303,79 @@ main {
 
 /*Présentation*/
 
-#presentation {
-    flex-direction: row;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+/*
+.monster {
+    width: 37,4px;
+    height: 27px;
+    background: url('images/spriteEclat.png') left center;
+    animation: play 0.5s steps(5) infinite;
+    z-index: 5;
+
 }
 
-.descPresentation {
+@keyframes play {
+    100% {
+        background-position: -187px;
+    }
+}
+*/
+
+
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+
+.aPropos {
+    width: 700px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 130px;
-}
-
-#presentation p {
-    background-color: white;
-    width: 30vw;
-    padding: 50px;
-    font-size: 20px;
+    justify-content: center;
+    margin: auto;
     position: relative;
 }
 
-#presentation button {
-    border-style: none;
-    width: 150px;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #FFBE00;
-    color: white;
-    font-size: 15px;
-    z-index: 6;
+.aPropos h3 {
+    margin-bottom: 50px;
+    position: relative;
 }
 
-#presentation p::after {
+.aPropos p {
+    padding: 70px;
+    background-color: white;
+    width: 40vw;
+    position: relative;
+}
+
+
+
+.aPropos p::after {
     content: "";
     background-image: url(images/basGauche.png);
     position: absolute;
-    left: -70px;
+    left: -50px;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
 }
 
-#presentation p::before {
+.aPropos p::before {
     content: "";
     background-image: url(images/hautDroite.png);
     position: absolute;
-    left: 495px;
-    ;
-    top: -40px;
+    left: 650px;
+    top: 40px;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
 }
 
-.boutonTelecharger{
+.aPropos .boutonCV {
     border-style: none;
     width: 150px;
     padding: 10px;
@@ -207,11 +383,57 @@ main {
     background-color: #FFBE00;
     color: white;
     font-size: 15px;
+    margin-top: 50px;
+    text-align: center;
+    transition: box-shadow 0.5s;
 }
 
-.boutonTelecharger:hover{
-    background-color: #FF8600;
-    transition: background-color 0.2s;
+
+.aPropos .boutonCV:hover {
+    box-shadow: 4px 6px #FF8600;
+    z-index: 10;
+}
+
+.aPropos a {
+    text-align: center;
+    z-index: 1;
+}
+
+
+.frise {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.uneExperience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.uneExperience .description {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+
+}
+
+.uneExperience .description .titre {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.point {
+    font-size: 1.5rem;
+    color: #FFBE00;
 }
 
 /* Galerie */
@@ -299,6 +521,68 @@ main {
     height: 100%;
     object-fit: cover;
     justify-items: center;
+}
+
+.itemProjet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%
+}
+
+.itemProjet img {
+    width: 35%;
+    object-fit: cover;
+    position: relative;
+}
+
+.bandeauProj {
+    position: absolute;
+    object-fit: cover;
+    width: 20%;
+    height: 80px;
+    right: 28%;
+    bottom: 9%;
+    padding: 0.5rem;
+
+}
+
+.bandeauProj p {
+    color: white;
+    margin: 0;
+}
+
+.bandeauProj a {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: -10;
+}
+
+.bandeauTitre {
+    width: 13%;
+    height: 4%;
+    position: absolute;
+    justify-content: center;
+    top: 35%;
+    z-index: 2;
+    font-weight: bold;
+    background-color: #FF8600;
+}
+
+.bandeauTitre p {
+    margin: auto;
+}
+
+
+.itemProjet img::before {
+    content: "";
+    background-image: url(images/infog.png);
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -386,7 +670,7 @@ main {
     max-width: 100vw;
 }
 
-#contact h3{
+#contact h3 {
     margin: 0;
 }
 
@@ -414,7 +698,7 @@ textarea:focus {
     color: black;
 }
 
-#contact p{
+#contact p {
     margin-bottom: 20px;
 }
 
@@ -457,7 +741,7 @@ fieldset {
     width: 180px;
     height: 100%;
     background-repeat: no-repeat;
-    
+
 }
 
 

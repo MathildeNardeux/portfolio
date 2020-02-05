@@ -5,49 +5,116 @@
     <meta charset="UTF-8">
     <title>Portfolio Mathilde Nardeux</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 576px)" href="css/inf800.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
 </head>
 
-<body>
-   <div class="loader-container"><div class="loader"></div></div>
-   
+<body data-spy="scroll" data-offset="80">
+    <!--
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+-->
+
     <header>
-        <nav class="menuNav">
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+            <a class="navbar-brand text-light" href="#accueil">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav nav text-light">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentation">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
         </nav>
+
     </header>
-    <main>
+
+
+
+
+    <main class="marginNav">
         <section id="accueil">
             <div class="accueilBloc">
-                <img src="css/images/identit%C3%A9.png" alt="" class="photoPerso">
                 <div class="elementPres">
-                    <h1>Mathilde Nardeux</h1>
-                    <h2>Web - Infographie - Vidéo - Photographie</h2>
-                    <h2>Etudiante IUT MMI - Laval</h2>
+                    <h1>Portfolio</h1>
+                    <h2 class="mathilde">Mathilde</h2>
+                    <h2 class="nardeux">Nardeux</h2>
+                    <h3>Webdesign - Intégration web</h3>
+                    <!--                    <h2>Etudiante IUT MMI - Laval</h2>-->
                 </div>
+
+                <div class="ombrePhoto">
+                    <div class="ombreBis">
+                        <img src="css/images/identit%C3%A9.png" alt="" class="photoPerso">
+                    </div>
+                </div>
+
+
             </div>
-            <a href="#presentation"><i class="fas fa-chevron-down"></i></a>
+            <div class="declencheScroll"><a href="#presentation"><i class="fas fa-chevron-down"></i></a>
+                <p>Scroll ou clic pour découvrir</p>
+            </div>
 
         </section>
-        <section id="presentation">
 
-            <div class="descPresentation">
-                <h3>A propos</h3>
-                <p>Je m'appelle <strong>Mathilde NARDEUX</strong> et je suis étudiante en première année en <strong>DUT Métiers du multimédia et de l'Internet</strong> à Laval. Je me passionne par <strong>le web, le design et l'audiovisuel</strong>. Je souhaiterai me spécialiser dans les domaines du webdesign ou du développement front end. Après un bac ES, j'ai choisi le DUT MMI pour approfondir mes connaissances dans le multimédia et avoir une formation polyvalente autour de ce domaine qui m'intéresse. Je souhaite réaliser ma deuxième année de DUT en <strong>alternance dans le milieu du web et de la communication.</strong></p>
-                <button class="boutonTelecharger">Voir mon CV</button>
+        <section class="container-fluid" id="presentation">
+            <div class="aPropos">
+                <h3 class="text-center">A propos</h3>
+                <p class="text-justify bg-white">Je m'appelle <strong>Mathilde NARDEUX</strong> et je suis étudiante en deuxième année à <strong>l'IUT Métiers du multimédia et de l'Internet</strong> de Laval. Je me passionne par <strong>le web, le design et l'audiovisuel</strong>. Je souhaiterai me spécialiser dans les domaines du webdesign ou du développement front end. Après un bac ES, j'ai choisi le DUT MMI pour approfondir mes connaissances dans le multimédia et avoir une formation polyvalente autour de la création graphique et le développement web. Je souhaite intégrer une licence pro dans le web en <strong>alternance</strong> dans le milieu du <strong>web</strong></p>
+                <a href=""><button class="boutonCV">Voir mon CV</button>
+                </a>
+
+                <div class="monster"></div>
+
             </div>
-
         </section>
+
+
+
         <section id="projets">
-            <div id="Galerie">
-                <h3>Galerie</h3>
+            <div id="Galerie" class="vh-100">
+                <h3>Mes réalisations</h3>
+                <div class="itemProjet">
+
+                    <div class="bandeauTitre text-light">
+                        <p>INFOGRAPHIE</p>
+                    </div>
+                    <img src="images/galerie/dossierResidente.png" alt="mise en page dossier" class="mt-4">
+
+                    <div class="bg-warning bandeauProj">
+                        <p class="font-weight-bold">POSTER DIDACTIQUE</p>
+                        <p>La webradio du campus de Laval</p>
+                        <a href="" class="text-white">Voir plus</a>
+                    </div>
+
+
+                </div>
+
+
+
+                <!--
                 <div id="listeProjet">
 
                     <div class="unProjet">
@@ -188,7 +255,9 @@
                     </div>
 
                 </div>
+-->
             </div>
+
         </section>
         <section id="competences">
             <h3>Mes compétences</h3>
@@ -239,7 +308,9 @@
     <footer>
 
     </footer>
-    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>

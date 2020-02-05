@@ -1,8 +1,3 @@
-function montreContenu(){
-    document.querySelector(".loader-container").classList.add('hidden');
-}
-
-setTimeout(montreContenu, 1200);
 
 
 const parralax = document.querySelector("#accueil")
@@ -28,7 +23,19 @@ sr.reveal(".descPresentation", {
 sr.reveal("h3", {
     duration: 2000,
     distance: '60px',
-    origin: 'top'
+    origin: 'right'
+})
+
+sr.reveal("h1", {
+    duration: 2000,
+    distance: '60px',
+    origin: 'left'
+})
+
+sr.reveal(".fa-chevron-down", {
+    duration: 2000,
+    distance: '60px',
+    origin: 'bottom'
 })
 
 
@@ -74,3 +81,21 @@ sr.reveal("#contact p",{
     origin: 'top',
     delay: 800
 })
+
+ $('.nav-item a').on('click', function (evt) {
+            var href = $(this).attr('href');
+
+            //- déclencher une animation de scroll vers le contenu de votre portfolio désiré
+            $('html, body').animate({
+                scrollTop: $(href).offset().top - 56
+
+
+                //- masquer le menu de la navbar si celle-ci est "collapsed" une fois l'animation terminée
+            }, 600, 'swing', function () {
+                $('#btnMenu').trigger('click');
+                $(".navbar-collapse").collapse('hide');
+
+            });
+
+            evt.preventDefault();
+        })

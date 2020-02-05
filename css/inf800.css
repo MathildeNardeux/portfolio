@@ -1,0 +1,84 @@
+.accueilBloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ombrePhoto {
+    order: -1;
+    margin-top: -90px;
+    text-align: center;
+}
+
+.photoPerso{
+    width: 60%;
+}
+
+.elementPres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.ombrePhoto::before {
+    content: "";
+    background-image: url(images/ellipseBeige.png);
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    width: 400px;
+    height: 80%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.ombrePhoto::after {
+    display: none;
+}
+
+.ombreBis::after {
+    
+    top: 0;
+    left: 15%;
+    width: 150px;
+
+}
+
+.ombreBis::before {
+    content: "";
+    background-image: url(images/hautDroite.png);
+    width: 150px;
+    height: 100%;
+    top: 60%;
+    left: 15%;
+}
+
+#accueil h2{
+    font-size: 100px;
+    padding: 10px;
+}
+
+#accueil h3{
+    font-size: 40px;
+}
+
+.declencheScroll{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.declencheScroll:hover p {
+    order: 1;
+}
+
+.aPropos p{
+    width: 400px;
+    text-align: center;
+    vertical-align: center;
+    padding: 50px;
+}
