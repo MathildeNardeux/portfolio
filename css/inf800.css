@@ -1,8 +1,21 @@
+html{
+    overflow-x: hidden;
+}
 .accueilBloc {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.mathilde::before {
+    display: none;
+}
+
+
+
+.mathilde::after{
+    display: none;
 }
 
 .ombrePhoto {
@@ -11,7 +24,11 @@
     text-align: center;
 }
 
-.photoPerso{
+.ombrePhoto::before{
+    display: none;
+}
+
+.photoPerso {
     width: 60%;
 }
 
@@ -40,7 +57,7 @@
 }
 
 .ombreBis::after {
-    
+
     top: 0;
     left: 15%;
     width: 150px;
@@ -56,16 +73,16 @@
     left: 15%;
 }
 
-#accueil h2{
+#accueil h2 {
     font-size: 100px;
     padding: 10px;
 }
 
-#accueil h3{
+#accueil h3 {
     font-size: 40px;
 }
 
-.declencheScroll{
+.declencheScroll {
     margin-top: -20px;
     display: flex;
     flex-direction: column;
@@ -76,9 +93,28 @@
     order: 1;
 }
 
-.aPropos p{
+.aPropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.aPropos p {
     width: 400px;
     text-align: center;
     vertical-align: center;
     padding: 50px;
+    margin: auto;
+}
+
+.aPropos p::before {
+    display: none;
+}
+
+
+
+.formulaireContact::before{
+    display: none;
 }
