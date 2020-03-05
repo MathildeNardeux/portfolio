@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="w-100">
 
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Mathilde Nardeux</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 576px)" href="css/inf800.css" />
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/inf800.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 </head>
 
 <body data-spy="scroll" data-offset="80">
-    <!--
-    <div class="loader-container">
-        <div class="loader"></div>
-    </div>
--->
+    <header>
+        <div class="container-fluid p-0">
 
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand text-light" href="#accueil">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav nav text-light">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#presentation">Présentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projets">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competences">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand text-light" href="#accueil">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav text-light">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentation">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projets">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
 
-                </ul>
-            </div>
-        </nav>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
     </header>
 
 
 
 
-    <main class="marginNav">
-        <section id="accueil">
+    <main class="container-fluid">
+        <section id="accueil" class="marginNav">
             <div class="accueilBloc">
                 <div class="elementPres">
                     <h1>Portfolio</h1>
@@ -79,9 +76,12 @@
         </section>
 
         <section class="container-fluid" id="presentation">
-            <div class="aPropos">
+            <div class="aPropos marginNav">
                 <h3 class="text-center">A propos</h3>
-                <p class="text-justify bg-white">Je m'appelle <strong>Mathilde NARDEUX</strong> et je suis étudiante en deuxième année à <strong>l'IUT Métiers du multimédia et de l'Internet</strong> de Laval. Je me passionne par <strong>le web, le design et l'audiovisuel</strong>. Je souhaiterai me spécialiser dans les domaines du webdesign ou du développement front end. Après un bac ES, j'ai choisi le DUT MMI pour approfondir mes connaissances dans le multimédia et avoir une formation polyvalente autour de la création graphique et le développement web. Je souhaite intégrer une licence pro dans le web en <strong>alternance</strong> dans le milieu du <strong>web</strong></p>
+
+                <div class="fondPres  bg-white">
+                    <p class="text-justify">Je m'appelle <strong>Mathilde NARDEUX</strong> et je suis étudiante en deuxième année à <strong>l'IUT Métiers du multimédia et de l'Internet</strong> de Laval. Je me passionne par <strong>le web, le design et l'audiovisuel</strong>. Je souhaiterai me spécialiser dans les domaines du webdesign ou du développement front end. Après un bac ES, j'ai choisi le DUT MMI pour approfondir mes connaissances dans le multimédia et avoir une formation polyvalente autour de la création graphique et le développement web. Je souhaite intégrer une licence pro dans le web en <strong>alternance</strong> dans le milieu du <strong>web</strong></p>
+                </div>
                 <a href=""><button class="boutonCV">Voir mon CV</button>
                 </a>
             </div>
@@ -90,168 +90,495 @@
 
 
         <section id="projets">
-            <div id="Galerie" class="vh-100">
+            <div id="Galerie" class="marginNav">
                 <h3>Mes réalisations</h3>
-                <div class="itemProjet">
+                <p class="introProj">Dans le cadre de projets scolaires, professionnels, personnels ou associatifs, j'ai pu aborder différens types de projet : du web à l'audiovisuel, en passant par l'infographie. </p>
 
-                    <div class="bandeauTitre text-light">
-                        <p>INFOGRAPHIE</p>
-                    </div>
-                    <img src="images/galerie/dossierResidente.png" alt="mise en page dossier" class="mt-4">
-
-                    <div class="bg-warning bandeauProj">
-                        <p class="font-weight-bold">POSTER DIDACTIQUE</p>
-                        <p>La webradio du campus de Laval</p>
-                        <a href="" class="text-white">Voir plus</a>
-                    </div>
-
-
-                </div>
-
-
-
-                <!--
                 <div id="listeProjet">
+                    <div class="zeroDechet">
+                        <div class="unProjet" data-toggle="modal" data-target="#zerodechet">
+                            <img src="images/galerie/dvltAsphalt.png">
+                            <div class="descProjet">
+                                <p><strong>WEB</strong></p>
+                                <p>Développement webdocumentaire sur le zéro déchet</p>
 
-                    <div class="unProjet">
-                        <img src="images/galerie/dossierAsphalt.png">
-                        <div class="descProjet">
-                            <p><strong>Mise en page</strong></p>
-                            <p>Réalisation du dossier d'avant projet présentant un projet de plateforme de covoiturage</p>
-                            <div class="outil"><img src="images/logiciel/indesign.png" alt="">
-                                <img src="images/logiciel/illustrator.png" alt=""></div>
-                        </div>
-                    </div>
-
-                    <div class="unProjet">
-                        <img src="images/galerie/posterNutrition.jpg">
-                        <div class="descProjet">
-                            <p><strong>Affiche - Infographie</strong></p>
-                            <p>Réalisation d'une affiche de prévention pour un exposé</p>
-                            <div class="outil"><img src="images/logiciel/illustrator.png" alt="">
-                                <img src="images/logiciel/photoshop.png" alt=""></div>
-                        </div>
-                    </div>
-
-
-                    <div class="unProjet">
-                        <img src="images/galerie/dossierOld'on.png">
-                        <div class="descProjet">
-                            <p><strong>Mise en page</strong></p>
-                            <p>Réalisation du dossier de présentation d'une plateforme d'adaptation d'interface PC pour personne agée</p>
-
-                            <div class="outil"><img src="images/logiciel/illustrator.png" alt="">
-                                <img src="images/logiciel/photoshop.png" alt="">
-                                <img src="images/logiciel/indesign.png" alt="">
+                                <div class="outil">
+                                    <img src="images/logiciel/photoshop.png" alt="">
+                                    <img src="images/logiciel/html.png" alt="">
+                                    <img src="images/logiciel/css3.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="unProjet">
-                        <img src="images/galerie/affichePbSociete.png">
-                        <div class="descProjet">
-                            <p><strong>Affiche</strong></p>
-                            <p>Réalisation d'une affiche avec une métaphore pour dénoncer un problème de société</p>
-                            <div class="outil">
-                                <img src="images/logiciel/affinity.png" alt="">
-                                <img src="images/logiciel/photoshop.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="unProjet">
-                        <img src="images/galerie/dvltAsphalt.png">
-                        <div class="descProjet">
-                            <p><strong>Développement web</strong></p>
-                            <p>Développement front-end du projet tuteuré du second semestre - Création d'une plateforme de covoiturage locale</p>
-
-                            <div class="outil">
-                                <img src="images/logiciel/photoshop.png" alt="">
-                                <img src="images/logiciel/html.png" alt="">
-                                <img src="images/logiciel/css3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="unProjet">
-                        <img src="images/galerie/dossierResidente.png">
-                        <div class="descProjet">
-                            <p><strong>Mise en page - Ergonomie</strong></p>
-                            <p>Mise en page d'un dossier d'analyse de site web en respectant la charte graphique du site</p>
-
-                            <div class="outil">
-                                <img src="images/logiciel/photoshop.png" alt="">
-                                <img src="images/logiciel/indesign.png" alt="">
-
-                                <img src="images/logiciel/illustrator.png" alt="">
-                            </div>
-                        </div>
-                    </div>
 
 
-                    <div class="unProjet">
-                        <img src="images/galerie/couvertureMagazine.png">
-                        <div class="descProjet">
-                            <p><strong>Mise en page</strong></p>
-                            <p>Réalisation d'un article de presse et mise en page en cours d'infogrpahie</p>
+                        <div class="modal fade" id="zerodechet" tabindex="-1" role="dialog" aria-labelledby="#zerodechet" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-justify container-fluid pb-5">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
 
-                            <div class="outil">
-                                <img src="images/logiciel/photoshop.png" alt="">
-                                <img src="images/logiciel/indesign.png" alt="">
+                                        <div class="row col-md">
+                                            <div class="col image form-group">
+                                                <div id="carousel0Dech" class="carousel slide" data-ride="carousel">
+                                                    <div class="rea carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="images/galerie/couvertureMagazine.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="images/galerie/videoRassemblement.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carousel0Dech" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carousel0Dech" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
 
-                                <img src="images/logiciel/illustrator.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <h2>Webdocumentaire Zéro déchet</h2>
+                                                <p>Dans le cadre du module « infographie » et « intégration web » de ma seconde année de DUT, nous devons réaliser un webdocumentaire sur le sujet de notre choix. J’ai souhaité m’intéresser au Zéro déchet. Après avoir fait de nombreuses recherches, j’ai pu cibler l’univers graphique que je souhaitais donner à mon webdocumentaire. A partir de ces couleurs, j’ai pu créer les maquettes des différentes pages. Ce site est en cours de développement. Ce projet a été l’occasion d’approfondir mes compétences de maquettage, et de webdesign à l’aide du logiciel Adobe XD. </p>
+
+
+
+                                                <div class="row col-sm">
+                                                    <div class="col">
+                                                        <h5>Date</h5>
+                                                        <p>Avril 2019</p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h5>Logiciels utilisés</h5>
+                                                        <p>InDesign</p>
+                                                    </div>
+                                                </div>
+                                                <a href="./media/magazine.pdf" target="_blank">
+                                                    <bouton class="boutonCV">CONSULTER</bouton>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
+                    <div class="cousezVosReves">
+                        <div class="unProjet" data-toggle="modal" data-target="#cousezVosReves">
+                            <img src="images/galerie/dvltAsphalt.png">
+                            <div class="descProjet">
+                                <p><strong>WEB</strong></p>
+                                <p>Cousez vos rêves – Site vitrine </p>
 
-                    <div class="unProjet">
-                        <img src="images/galerie/videoRassemblement.png">
-                        <div class="descProjet">
-                            <p><strong>Audiovisuel</strong></p>
-                            <p>Réalisation de vidéo best-of de vidéo pour un rassemblement de jeune de 12 à 18 ans</p>
-                            <div class="outil">
-                                <img src="images/logiciel/PremierePro.png" alt="">
-                                <img src="images/logiciel/Ae.png" alt="">
-
-                                <img src="images/logiciel/illustrator.png" alt="">
-
-                                <img src="images/logiciel/photoshop.png" alt="">
-
-                                <img src="images/logiciel/ytb.png" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="unProjet">
-                        <img src="images/galerie/posterUSA.jpg">
-                        <div class="descProjet">
-                            <p><strong>Affiche - Infographie</strong></p>
-                            <p>Réalisation d'un poster USA</p>
-                            <div class="outil"><img src="images/logiciel/illustrator.png" alt="">
-                                <img src="images/logiciel/photoshop.png" alt=""></div>
-                        </div>
-                    </div>
-
-                    <div class="unProjet">
-                        <img src="images/galerie/cvMathilde.png">
-                        <div class="descProjet">
-                            <p><strong>Affiche</strong></p>
-                            <p>Réalisation du dossier de présentation d'une plateforme d'adaptation d'interface PC pour personne agée</p>
-
-                            <div class="outil">
-                                <img src="images/logiciel/photoshop.png" alt="">
-                                <img src="images/logiciel/indesign.png" alt="">
-
-                                <img src="images/logiciel/illustrator.png" alt="">
+                                <div class="outil">
+                                    <img src="images/logiciel/html.png" alt="">
+                                    <img src="images/logiciel/css3.png" alt="">
+                                </div>
                             </div>
                         </div>
+
+
+
+                        <div class="modal fade" id="cousezVosReves" tabindex="-1" role="dialog" aria-labelledby="#cousezVosReves" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-justify container-fluid pb-5">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                        <div class="row col-md">
+                                            <div class="col image form-group">
+                                                <div id="carouselCVR" class="carousel slide" data-ride="carousel">
+                                                    <div class="rea carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="images/galerie/couvertureMagazine.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="images/galerie/videoRassemblement.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselCVR" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselCVR" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col">
+                                                <h2>Webdocumentaire Zéro déchet</h2>
+                                                <p>Dans le cadre du module « infographie » et « intégration web » de ma seconde année de DUT, nous devons réaliser un webdocumentaire sur le sujet de notre choix. J’ai souhaité m’intéresser au Zéro déchet. Après avoir fait de nombreuses recherches, j’ai pu cibler l’univers graphique que je souhaitais donner à mon webdocumentaire. A partir de ces couleurs, j’ai pu créer les maquettes des différentes pages. Ce site est en cours de développement. Ce projet a été l’occasion d’approfondir mes compétences de maquettage, et de webdesign à l’aide du logiciel Adobe XD. </p>
+
+
+
+                                                <div class="row col-sm">
+                                                    <div class="col">
+                                                        <h5>Date</h5>
+                                                        <p>Avril 2019</p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h5>Logiciels utilisés</h5>
+                                                        <p>InDesign</p>
+                                                    </div>
+                                                </div>
+                                                <a href="./media/magazine.pdf" target="_blank">
+                                                    <bouton class="boutonCV">CONSULTER</bouton>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="datavis">
+                        <div class="unProjet" data-toggle="modal" data-target="#datavis">
+                            <img src="images/galerie/dvltAsphalt.png">
+                            <div class="descProjet">
+                                <p><strong>INFOGRAPHIE</strong></p>
+                                <p>Datavisualisation - Les pâtes</p>
+
+                                <div class="outil">
+                                    <img src="images/logiciel/photoshop.png" alt="">
+                                    <img src="images/logiciel/html.png" alt="">
+                                    <img src="images/logiciel/css3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade" id="datavis" tabindex="-1" role="dialog" aria-labelledby="#datavis" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-justify container-fluid pb-5">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                        <div class="row col-md">
+                                            <div class="col image form-group">
+                                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                    <div class="rea carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="images/galerie/couvertureMagazine.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="images/galerie/videoRassemblement.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col">
+                                                <h2>Datavisualisation - Les pâtes</h2>
+                                                <p>Dans le cadre du cours d'infographie, nous devions réaliser une data visualisation sur le thème de notre choix, les outils et le style de notre choix. J'ai opté pour un style un peu “ardoise” avec le fond noir et les polices et dessins comme dessinés à la craie. J'ai réalisé cette affiche à l'aide de l'iPad pro et de son stylet, ainsi que de l'application Affinity Designer.</p>
+
+
+
+                                                <div class="row col-sm">
+                                                    <div class="col">
+                                                        <h5>Date</h5>
+                                                        <p>Avril 2019</p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h5>Logiciels utilisés</h5>
+                                                        <p>InDesign</p>
+                                                    </div>
+                                                </div>
+                                                <a href="./media/magazine.pdf" target="_blank">
+                                                    <bouton class="boutonCV">CONSULTER</bouton>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="leStudio">
+                        <div class="unProjet" data-toggle="modal" data-target="#leStudio">
+                            <img src="images/galerie/dvltAsphalt.png">
+                            <div class="descProjet">
+                                <p><strong>INFOGRAPHIE</strong></p>
+                                <p>Poster didactique - Le Studio</p>
+
+                                <div class="outil">
+                                    <img src="images/logiciel/photoshop.png" alt="">
+                                    <img src="images/logiciel/html.png" alt="">
+                                    <img src="images/logiciel/css3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade" id="leStudio" tabindex="-1" role="dialog" aria-labelledby="#leStudio" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-justify container-fluid pb-5">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                        <div class="row col-md">
+                                            <div class="col image form-group">
+                                                <div id="carouselStudio" class="carousel slide" data-ride="carousel">
+                                                    <div class="rea carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="images/galerie/couvertureMagazine.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="images/galerie/videoRassemblement.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselStudio" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselStudio" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col">
+                                                <h2>Poster didactique - Le Studio</h2>
+                                                <p>Dans le cadre du cours d'infographie, nous devions réaliser une data visualisation sur le thème de notre choix, les outils et le style de notre choix. J'ai opté pour un style un peu “ardoise” avec le fond noir et les polices et dessins comme dessinés à la craie. J'ai réalisé cette affiche à l'aide de l'iPad pro et de son stylet, ainsi que de l'application Affinity Designer.</p>
+
+
+
+                                                <div class="row col-sm">
+                                                    <div class="col">
+                                                        <h5>Date</h5>
+                                                        <p>Avril 2019</p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h5>Logiciels utilisés</h5>
+                                                        <p>InDesign</p>
+                                                    </div>
+                                                </div>
+                                                <a href="./media/magazine.pdf" target="_blank">
+                                                    <bouton class="boutonCV">CONSULTER</bouton>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="magazineNetflix">
+                        <div class="unProjet" data-toggle="modal" data-target="#magazineNetflix">
+                            <img src="images/galerie/dvltAsphalt.png">
+                            <div class="descProjet">
+                                <p><strong>INFOGRAPHIE / COMMUNICATION </strong></p>
+                                <p>Rédaction et mise en page magazine fictif</p>
+
+                                <div class="outil">
+                                    <img src="images/logiciel/photoshop.png" alt="">
+                                    <img src="images/logiciel/html.png" alt="">
+                                    <img src="images/logiciel/css3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade" id="magazineNetflix" tabindex="-1" role="dialog" aria-labelledby="#leStudio" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-justify container-fluid pb-5">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                        <div class="row col-md">
+                                            <div class="col image form-group">
+                                                <div id="carouselNetflix" class="carousel slide" data-ride="carousel">
+                                                    <div class="rea carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="images/galerie/couvertureMagazine.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="images/galerie/magazineNetflix.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselNetflix" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselNetflix" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col">
+                                                <h2>Rédaction et mise en page magazine</h2>
+                                                <p>Dans le cadre du cours d’expression communication et du cours de PAO, j'ai réalisé un magazine sur Netflix. J'ai ainsi réalisé chaque étape de la conception du magazine : de la recherche d’information, à la recherche de l’identité du magazine. Cela a été l'occasion d'approfondir l'utilisation d'InDesign.</p>
+
+
+
+                                                <div class="row col-sm">
+                                                    <div class="col">
+                                                        <h5>Date</h5>
+                                                        <p>Avril 2019</p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h5>Logiciels utilisés</h5>
+                                                        <p>InDesign</p>
+                                                    </div>
+                                                </div>
+                                                <a href="./media/magazine.pdf" target="_blank">
+                                                    <bouton class="boutonCV">CONSULTER</bouton>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videosMEJ">
+                        <div class="unProjet" data-toggle="modal" data-target="#magazineNetflix">
+                            <img src="images/galerie/dvltAsphalt.png">
+                            <div class="descProjet">
+                                <p><strong>Audiovisuel</strong></p>
+                                <p>Communication évènementielle</p>
+
+                                <div class="outil">
+                                    <img src="images/logiciel/photoshop.png" alt="">
+                                    <img src="images/logiciel/html.png" alt="">
+                                    <img src="images/logiciel/css3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade" id="videosMEJ" tabindex="-1" role="dialog" aria-labelledby="#videosMEJ" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-justify container-fluid pb-5">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                        <div class="row col-md">
+                                            <div class="col image form-group">
+                                                <div id="carouselMEJ" class="carousel slide" data-ride="carousel">
+                                                    <div class="rea carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="images/galerie/couvertureMagazine.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="images/galerie/magazineNetflix.png" class="d-block w-100" alt="Magazine sur l'archtecture minimaliste">
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselMEJ" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselMEJ" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col">
+                                                <h2>Communication évènementielle</h2>
+                                                <p>Implication bénévole dans l’équipe de communication d’un mouvement de jeunes de 7 à 18 ans.
+
+                                                    Création de supports de communication vidéo dans le cadre d’évènement du mouvement : vidéos récapitulatives des journées de rassemblement, création de miniature, adaptations et sous titrage de vidéo pour les réseaux sociaux. </p>
+
+
+
+                                                <div class="row col-sm">
+                                                    <div class="col">
+                                                        <h5>Date</h5>
+                                                        <p>Avril 2019</p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h5>Logiciels utilisés</h5>
+                                                        <p>InDesign</p>
+                                                    </div>
+                                                </div>
+                                                <a href="./media/magazine.pdf" target="_blank">
+                                                    <bouton class="boutonCV">CONSULTER</bouton>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
--->
+
+
+
+
+
+
+
+
             </div>
 
         </section>
@@ -276,37 +603,37 @@
 
 
         </section>
-<!--
-        <section id="contact">
+
+        <section id="contact" class="marginNav">
             <h3>Me contacter</h3>
             <p>Si vous avez une question, un projet, ou autres, n'hésitez pas à me contacter</p>
 
             <div class="fondContact">
-                <form action="index.php" method="post">
+                <form action="contact.php" method="post">
                     <fieldset class="formulaireContact">
 
                         <fieldset class="champ"><label for="nom">Votre nom : </label>
-                            <input type="text" name="nom" placeholder="Nom et prénom"></fieldset>
+                            <input type="text" name="nom" placeholder="Nom et prénom" id="nom"></fieldset>
 
                         <fieldset class="champ"><label for="mail">Votre adresse e-mail : </label>
-                            <input type="email" name="email" placeholder="Votre email"></fieldset>
+                            <input type="email" name="email" id="email" placeholder="Votre email"></fieldset>
 
                         <fieldset class="champ">
-                            <label for="message">Votre message : </label>
+                            <label for="message" id="message">Votre message : </label>
                             <textarea id="message" name="message" rows="5" cols="50" placeholder="Tapez ici votre message"></textarea>
 
                         </fieldset>
-                        <input type="submit" class="boutonTelecharger">
+                        <input type="submit" class="boutonCV">
                     </fieldset>
                 </form>
             </div>
         </section>
--->
+
     </main>
     <footer>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

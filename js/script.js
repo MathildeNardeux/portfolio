@@ -1,5 +1,3 @@
-
-
 const parralax = document.querySelector("#accueil")
 window.addEventListener('scroll', () => {
     parralax.style.backgroundPositionY = window.scrollY / 2 + "px";
@@ -68,34 +66,54 @@ sr.reveal(".devWeb", {
     delay: 800
 });
 
-sr.reveal(".formulaireContact",{
+sr.reveal(".formulaireContact", {
     duration: 2000,
     distance: '60px',
     origin: 'top',
     delay: 900
 })
 
-sr.reveal("#contact p",{
+sr.reveal("#contact p", {
     duration: 2000,
     distance: '60px',
     origin: 'top',
     delay: 800
 })
 
- $('.nav-item a').on('click', function (evt) {
-            var href = $(this).attr('href');
+$('.nav-item a').on('click', function (evt) {
+    var href = $(this).attr('href');
 
-            //- déclencher une animation de scroll vers le contenu de votre portfolio désiré
-            $('html, body').animate({
-                scrollTop: $(href).offset().top - 56
+    //- déclencher une animation de scroll vers le contenu de votre portfolio désiré
+    $('html, body').animate({
+        scrollTop: $(href).offset().top - 56
 
 
-                //- masquer le menu de la navbar si celle-ci est "collapsed" une fois l'animation terminée
-            }, 600, 'swing', function () {
-                $('#btnMenu').trigger('click');
-                $(".navbar-collapse").collapse('hide');
+        //- masquer le menu de la navbar si celle-ci est "collapsed" une fois l'animation terminée
+    }, 1000, 'swing', function () {
+        $('#btnMenu').trigger('click');
+        $(".navbar-collapse").collapse('hide');
 
-            });
+    });
 
-            evt.preventDefault();
-        })
+    evt.preventDefault();
+});
+
+
+
+$('.nav-item a').on('click', function (evt) {
+    var href = $(this).attr('href');
+
+    //- déclencher une animation de scroll vers le contenu de votre portfolio désiré
+    $('html, body').animate({
+        scrollTop: $(href).offset().top - 56
+
+
+        //- masquer le menu de la navbar si celle-ci est "collapsed" une fois l'animation terminée
+    }, 0, 'swing', function () {
+        $('#btnMenu').trigger('click');
+        $(".navbar-collapse").collapse('hide');
+
+    });
+
+    evt.preventDefault();
+})

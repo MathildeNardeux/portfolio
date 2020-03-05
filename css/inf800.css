@@ -8,6 +8,8 @@ html{
     justify-content: space-between;
 }
 
+
+
 .mathilde::before {
     display: none;
 }
@@ -93,24 +95,44 @@ html{
     order: 1;
 }
 
+.aPropos h3{
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+
 .aPropos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: auto;
 }
 
 .aPropos p {
-    width: 400px;
     text-align: center;
     vertical-align: center;
     padding: 50px;
-    margin: auto;
+    
 }
 
 .aPropos p::before {
     display: none;
+}
+
+.fondPres {
+    transition: box-shadow 0.5s;
+    width: 350px;
+    margin: auto;
+}
+
+
+
+#listeProjet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    max-width: 80%;
+    
 }
 
 
